@@ -54,6 +54,146 @@
 * Uso mínimo de imágenes pesadas, tipografía accesible.
 * Contrastes claros y navegación simple (accesible).
 
+# Estructura de la web
+
+## 1️⃣ Estructura de la web
+
+Propondría estas páginas y secciones:
+
+```
+📦 EcoPuntos/
+ ┣ index.html                # Página de bienvenida
+ ┣ 📂 pages/
+ ┃ ┣ producto.html           # Qué es EcoPuntos, cómo funciona
+ ┃ ┣ sostenibilidad.html     # ODS y beneficios ambientales
+ ┃ ┣ economia-circular.html  # Principios de economía circular aplicados
+ ┃ ┣ ciclo-vida.html         # Ciclo de vida del sistema de contenedores
+ ┃ ┣ mapa.html               # Mapa de comercios locales y simulación puntos
+ ┃ ┣ equipo.html             # Quiénes somos y reparto de tareas
+ ┣ 📂 css/
+ ┃ ┗ styles.css
+ ┣ 📂 js/
+ ┃ ┗ main.js
+ ┣ 📂 assets/
+ ┃ ┣ logo.png
+ ┃ ┣ iconos/                 # Iconos de reciclaje, ODS, puntos
+ ┃ ┗ img/                    # Imágenes de contenedores, mapas, ejemplos
+ ┗ README.md
+```
+
+### Página por página:
+
+1. **index.html**
+
+   * Hero section: logo, slogan, llamada a la acción (“Descubre EcoPuntos”).
+   * Breve introducción animada con JS.
+   * Navegación a las secciones principales.
+
+2. **producto.html**
+
+   * Explicación de qué es EcoPuntos.
+   * Problema que resuelve.
+   * Público objetivo.
+   * JS: acordeón para “Cómo funciona”.
+
+3. **sostenibilidad.html**
+
+   * ODS relacionados (iconos + descripción).
+   * Riesgos y oportunidades ambientales y sociales.
+   * JS: secciones desplegables o tabs.
+
+4. **economia-circular.html**
+
+   * Principios aplicados.
+   * Comparativa con modelo tradicional.
+   * Beneficios claros.
+
+5. **ciclo-vida.html**
+
+   * Diseño, desarrollo, uso, mantenimiento, fin de vida.
+   * Diagrama visual (SVG o imagen ligera).
+   * JS: popups informativos al pasar por cada fase.
+
+6. **mapa.html**
+
+   * Mapa interactivo de comercios locales.
+   * Simulación de puntos al depositar residuos.
+   * Ranking de usuarios (gamificación).
+
+7. **equipo.html**
+
+   * Integrantes + foto/icono + tareas realizadas.
+   * Breve diario de trabajo.
+
+---
+
+## 2️⃣ Paleta de colores
+
+Queremos transmitir **sostenibilidad, confianza y gamificación**:
+
+| Color           | Uso principal                               | Hex     |
+| --------------- | ------------------------------------------- | ------- |
+| Verde principal | Botones, encabezados, iconos de reciclaje   | #2E7D32 |
+| Verde claro     | Hover botones, fondos de secciones          | #81C784 |
+| Azul sostenible | Enlaces, enlaces hover, títulos secundarios | #0288D1 |
+| Amarillo puntos | Resaltar puntos de usuario, badges, iconos  | #FBC02D |
+| Gris neutro     | Fondos secundarios, texto menos relevante   | #F5F5F5 |
+| Gris oscuro     | Texto principal                             | #212121 |
+
+💡 **Tip:** evitar imágenes muy pesadas para mantener la web **ligera y sostenible**.
+
+---
+
+## 3️⃣ Tipografías
+
+* **Fuente principal (títulos y headers):**
+
+  * **Poppins** o **Montserrat** (moderna y clara, buena para lectura digital).
+  * Usar en H1, H2, H3.
+
+* **Fuente secundaria (cuerpo de texto):**
+
+  * **Roboto** o **Open Sans** (legible en cualquier dispositivo).
+  * Usar en párrafos, listas y acordeones.
+
+* **Uso recomendado:**
+
+  * H1/H2: Poppins Bold (impacto visual).
+  * H3/H4: Poppins Medium.
+  * Párrafos y listas: Roboto Regular.
+  * Botones: Poppins Medium, mayúsculas para llamar la atención.
+
+---
+
+## 4️⃣ Diseño y estilo general
+
+### Layout
+
+* **Header:** fijo, navegación clara (Home, Producto, Sostenibilidad, Economía circular, Ciclo de vida, Mapa, Equipo).
+* **Footer:** contacto, enlaces a GitHub Pages, créditos, mini iconos de ODS.
+* **Grid / Flexbox:** secciones divididas de forma clara, adaptable a móvil.
+
+### Componentes con JS
+
+* **Acordeones y tabs:** para explicaciones extensas (ODS, ciclo de vida).
+* **Mapa interactivo:** puntos en comercios locales.
+* **Ranking y simulación de puntos:** contador dinámico.
+
+### Botones y CTAs
+
+* Botones verdes con hover amarillo claro.
+* Efecto “pulse” para llamar a interactuar con puntos o simulaciones.
+
+### Iconografía
+
+* Iconos de reciclaje, energía, ODS y puntos.
+* Estilo plano, minimalista, consistentes con la paleta.
+
+### Imágenes y assets
+
+* Imágenes ligeras, preferiblemente SVG para contenedores y gráficos.
+* Evitar fotos pesadas; usar ilustraciones minimalistas para mantener **sostenibilidad digital**.
+
 
 # Reparto de trabajo
 
