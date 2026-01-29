@@ -1,0 +1,28 @@
+body {
+    background-color: #F2F4F3; 
+    text-color: #212121;
+}
+
+.hero {
+    background-color: #81C784;
+}
+
+.hero img{
+    border-radius: 1%;
+    width: 200px;
+}
+.navigation {
+  position: fixed;
+  top: 10px;      /* Distancia desde arriba */
+  z-index: 1000;
+  background-color: #81C784;
+  width: 100%;
+}
+.navigation img{
+    width: 50px;
+}
+.navigation a{
+    color: #212121;
+    text-decoration: none;
+    margin: 0 15px;
+}
