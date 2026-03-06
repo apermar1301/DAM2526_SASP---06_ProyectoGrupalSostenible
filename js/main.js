@@ -3,7 +3,7 @@
 
 
 
-/* Hecho por Jhonatan solo para probar el diagrama visual */
+/* DIAGRAMA VISUAL */
 document.addEventListener("DOMContentLoaded", function() {
 
     const fases = document.querySelectorAll(".fase");
@@ -20,6 +20,32 @@ document.addEventListener("DOMContentLoaded", function() {
 
         fase.addEventListener("mouseleave", () => {
             popup.style.display = "none";
+        });
+
+    });
+
+});
+
+
+/* MAPA */
+document.addEventListener("DOMContentLoaded", function () {
+
+    let totalPuntos = 0;
+
+    const botones = document.querySelectorAll(".btn-reciclar");
+    const contador = document.getElementById("contadorPuntos");
+    const ranking = document.getElementById("misPuntosRanking");
+
+    botones.forEach(boton => {
+
+        boton.addEventListener("click", function () {
+
+            const puntos = parseInt(boton.dataset.puntos);
+            totalPuntos += puntos;
+
+            contador.innerText = totalPuntos + " puntos";
+            ranking.innerText = totalPuntos;
+
         });
 
     });
