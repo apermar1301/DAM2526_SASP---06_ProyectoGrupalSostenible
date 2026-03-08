@@ -5,72 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoPuntos - Mapa y Simulación</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
 </head>
 
 <body>
 
-    <h1>Mapa y Sistema de EcoPuntos</h1>
+    <header class="navigation">
+        <nav>
+            <a href="../index.html" class="logo">RECYCLO</a>
+            <ul class="nav-links">
+                <li><a href="/pages/producto.html">Producto</a></li>
+                <li><a href="/pages/ciclo-vida.html" class="active">Ciclo de vida</a></li>
+                <li><a href="/pages/economia-circular.html">Economía Circular</a></li>
+                <li><a href="/pages/sostenibilidad.html">Sostenibilidad</a></li>
+                <li><a href="/pages/mapa.html">Mapa</a></li>
+                <li><a href="/pages/equipo.html">Equipo</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Introducción -->
-    <section class="intro-mapa">
-        <p>
-            En esta sección se simula el funcionamiento del sistema EcoPuntos.
-            Recicla virtualmente, acumula puntos y consulta los comercios
-            donde puedes canjearlos.
-        </p>
-    </section>
 
-    <!-- Simulador -->
-    <section class="simulador">
-    <h2>Simula tu reciclaje</h2>
+    <main class="container">
+        <section class="intro-mapa">
+            <h1>Mapa y Sistema de EcoPuntos</h1>
+            <p>
+                En esta sección se simula el funcionamiento del sistema EcoPuntos.
+                Recicla virtualmente, acumula puntos y consulta los comercios
+                donde puedes canjearlos.
+            </p>
+        </section>
 
-    <div class="botones-reciclaje">
-        <button class="btn-reciclar" data-puntos="10">Plástico (+10)</button>
-        <button class="btn-reciclar" data-puntos="8">Papel (+8)</button>
-        <button class="btn-reciclar" data-puntos="12">Vidrio (+12)</button>
-        <button class="btn-reciclar" data-puntos="20">Electrónico (+20)</button>
-        </div>
-
-        <div class="saldo">
-            <h3>Tu saldo actual:</h3>
-            <p id="contadorPuntos">0 puntos</p>
-        </div>
-    </section>
-
-    <!-- Ranking -->
-    <section class="ranking">
-        <h2>Ranking de reciclaje</h2>
-
-        <ul>
-            <li>Álvaro - 320 puntos</li>
-            <li>Daniel - 280 puntos</li>
-            <li>Tú - <span id="misPuntosRanking">0</span> puntos</li>
-        </ul>
-    </section>
-
-    <!-- Mapa -->
-    <section class="mapa-comercios">
-        <h2>Comercios donde canjear tus EcoPuntos</h2>
-
-        <div class="mapa">
-
-            <div class="comercio">
-                Cafetería Verde
+        <section class="simulador">
+            <h2>Simula tu reciclaje</h2>
+            <div class="botones-reciclaje">
+                <button class="btn-reciclar" data-puntos="10">Plástico (+10)</button>
+                <button class="btn-reciclar" data-puntos="8">Papel (+8)</button>
+                <button class="btn-reciclar" data-puntos="12">Vidrio (+12)</button>
+                <button class="btn-reciclar" data-puntos="20">Electrónico (+20)</button>
             </div>
 
-            <div class="comercio">
-                Tienda EcoLocal
+            <div class="saldo">
+                <h3>Tu saldo actual:</h3>
+                <p id="contadorPuntos">0 puntos</p>
             </div>
+        </section>
 
-            <div class="comercio">
-                Herbolario Natural
+        <section class="ranking">
+            <h2>Ranking de reciclaje</h2>
+            <ul>
+                <li>Álvaro - 320 puntos</li>
+                <li>Daniel - 280 puntos</li>
+                <li>Tú - <span id="misPuntosRanking">0</span> puntos</li>
+            </ul>
+        </section>
+
+        <section class="mapa-comercios">
+            <h2>Comercios donde canjear tus EcoPuntos</h2>
+            <div class="mapa">
+                <div class="comercio">Cafetería Verde</div>
+                <div class="comercio">Tienda EcoLocal</div>
+                <div class="comercio">Herbolario Natural</div>
             </div>
-
-        </div>
-    </section>
+        </section>
+    </main>
 
 </body>
+
 </html>

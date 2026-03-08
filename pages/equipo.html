@@ -4,83 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <script src="/js/main.js"></script>
+    <title>Equipo | Recyclo</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
 </head>
+
 <body>
-    <h1>Equipo</h1>
-    <h2 id="introduccion">Introducción del equipo</h2>
-    <p>
-        El proyecto ha sido desarrollado mediante una distribución equilibrada de tareas, asegurando que cada integrante participara tanto en el desarrollo técnico como en el contenido conceptual del trabajo.
-    </p>
-    <p>
-        Cada miembro asumió un rol específico dentro del equipo, contribuyendo de forma complementaria al resultado final.
-    </p>
-<!-- Miembros del equipo -->
-    <section class="miembros-equipo">
 
-        <article class="miembro">
-            <h2>Álvaro - Coordinación e Identidad Visual</h2>
-
-            <h3>Responsabilidades:</h3>
-            <ul>
-                <li>Desarrollo de la página principal (index.html).</li>
-                <li>Explicación del producto y funcionamiento general.</li>
-                <li>Definición del nombre del proyecto y eslogan.</li>
-                <li>Diseño de la identidad visual (colores y tipografías).</li>
-                <li>Creación del header y footer comunes.</li>
-                <li>Implementación del menú responsive con JavaScript.</li>
-                <li>Revisión y organización del README.</li>
+    <header class="navigation">
+        <nav>
+            <a href="../index.html" class="logo">RECYCLO</a>
+            <ul class="nav-links">
+                <li><a href="/pages/producto.html">Producto</a></li>
+                <li><a href="/pages/ciclo-vida.html" class="active">Ciclo de vida</a></li>
+                <li><a href="/pages/economia-circular.html">Economía Circular</a></li>
+                <li><a href="/pages/sostenibilidad.html">Sostenibilidad</a></li>
+                <li><a href="/pages/mapa.html">Mapa</a></li>
+                <li><a href="/pages/equipo.html">Equipo</a></li>
             </ul>
+        </nav>
+    </header>
 
+
+    <main class="container">
+        <section id="introduccion">
+            <h1>Introducción del equipo</h1>
             <p>
-                Su función principal ha sido garantizar coherencia visual y estructural
-                en todo el sitio web.
+                El proyecto ha sido desarrollado mediante una distribución equilibrada de tareas, asegurando que cada
+                integrante participara tanto en el desarrollo técnico como en el contenido conceptual del trabajo.
             </p>
-        </article>
-
-        <article class="miembro">
-            <h2>Daniel - Sostenibilidad y Economía Circular</h2>
-
-            <h3>Responsabilidades:</h3>
-            <ul>
-                <li>Desarrollo de la sección de sostenibilidad (sostenibilidad.html).</li>
-                <li>Análisis de los Objetivos de Desarrollo Sostenible (ODS 11, 12 y 13).</li>
-                <li>Explicación de la economía circular aplicada al proyecto.</li>
-                <li>Análisis de riesgos y oportunidades ambientales.</li>
-                <li>Comparación entre modelo tradicional y modelo EcoPuntos.</li>
-                <li>Implementación de acordeones y secciones desplegables con JS.</li>
-            </ul>
-
             <p>
-                Ha fundamentado el proyecto desde el punto de vista ambiental
-                y social, justificando su viabilidad sostenible.
+                Cada miembro asumió un rol específico dentro del equipo, contribuyendo de forma complementaria al
+                resultado final.
             </p>
-        </article>
+        </section>
 
-        <article class="miembro">
-            <h2>Jhonatan - Ciclo de Vida e Interacción</h2>
+        <section class="miembros-equipo">
+            <article class="miembro">
+                <h2>Álvaro - Coordinación e Identidad Visual</h2>
+                <h3>Responsabilidades:</h3>
+                <ul>
+                    <li>Desarrollo de la página principal (index.html).</li>
+                    <li>Explicación del producto y funcionamiento general.</li>
+                    <li>Definición del nombre del proyecto y eslogan.</li>
+                    <li>Diseño de la identidad visual (colores y tipografías).</li>
+                    <li>Creación del header y footer comunes.</li>
+                    <li>Implementación del menú responsive con JavaScript.</li>
+                    <li>Revisión y organización del README.</li>
+                </ul>
+                <p>Su función principal ha sido garantizar coherencia visual y estructural en todo el sitio web.</p>
+            </article>
 
-            <h3>Responsabilidades:</h3>
-            <ul>
-                <li>Análisis completo del ciclo de vida del sistema.</li>
-                <li>Desarrollo del diagrama visual interactivo.</li>
-                <li>Implementación de popups informativos con JavaScript.</li>
-                <li>Creación del simulador de EcoPuntos.</li>
-                <li>Desarrollo del sistema de contador dinámico y ranking.</li>
-                <li>Representación del mapa de comercios locales.</li>
-                <li>Elaboración de la página del equipo.</li>
-            </ul>
+            <article class="miembro">
+                <h2>Daniel - Sostenibilidad y Economía Circular</h2>
+                <h3>Responsabilidades:</h3>
+                <ul>
+                    <li>Desarrollo de la sección de sostenibilidad (sostenibilidad.html).</li>
+                    <li>Análisis de los Objetivos de Desarrollo Sostenible (ODS 11, 12 y 13).</li>
+                    <li>Explicación de la economía circular aplicada al proyecto.</li>
+                    <li>Análisis de riesgos y oportunidades ambientales.</li>
+                    <li>Comparación entre modelo tradicional y modelo EcoPuntos.</li>
+                    <li>Implementación de acordeones y secciones desplegables con JS.</li>
+                </ul>
+                <p>Ha fundamentado el proyecto desde el punto de vista ambiental y social, justificando su viabilidad
+                    sostenible.</p>
+            </article>
 
-            <p>
-                Ha desarrollado la parte interactiva del proyecto, aplicando
-                programación dinámica para simular el funcionamiento real del sistema.
-            </p>
-        </article>
-
-    </section>
+            <article class="miembro">
+                <h2>Jhonatan - Ciclo de Vida e Interacción</h2>
+                <h3>Responsabilidades:</h3>
+                <ul>
+                    <li>Análisis completo del ciclo de vida del sistema.</li>
+                    <li>Desarrollo del diagrama visual interactivo.</li>
+                    <li>Implementación de popups informativos con JavaScript.</li>
+                    <li>Creación del simulador de EcoPuntos.</li>
+                    <li>Desarrollo del sistema de contador dinámico y ranking.</li>
+                    <li>Representación del mapa de comercios locales.</li>
+                    <li>Elaboración de la página del equipo.</li>
+                </ul>
+                <p>Ha desarrollado la parte interactiva del proyecto, aplicando programación dinámica para simular el
+                    funcionamiento real del sistema.</p>
+            </article>
+        </section>
+    </main>
 
 </body>
+
 </html>

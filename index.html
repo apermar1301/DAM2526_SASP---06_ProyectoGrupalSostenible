@@ -6,167 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recyclo | Convierte reciclar en recompensas</title>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@600;700&display=swap"
+        rel="stylesheet">
+    <script src="/js/main.js" defer></script>
 </head>
 
 <body>
 
-
-<header>
-
-    <nav class="navbar">
-
-        <div class="logo">
-            <h1>RECYCLO</h1>
-        </div>
-
-        <ul class="menu">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#como-funciona">Cómo funciona</a></li>
-            <li><a href="#ecopuntos">Ecopuntos</a></li>
-            <li><a href="#negocios">Negocios locales</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-
-    </nav>
-
-</header>
-
-
-
-<section id="inicio" class="hero">
-
-    <div class="hero-text">
-
-        <h2>Convierte reciclar en recompensas</h2>
-
-        <p>
-            Con Recyclo cada vez que reciclas ganas Ecopuntos que puedes
-            gastar en comercios locales. Ayuda al planeta y a tu ciudad.
-        </p>
-
-        <button class="btn-principal">
-            Empieza a reciclar
-        </button>
-
-    </div>
-
-    <div class="hero-img">
-
-        <img src="img/hero-recyclo.png" alt="Ilustración reciclaje">
-
-    </div>
-
-</section>
-
-
-
-<section id="como-funciona" class="como-funciona">
-
-    <h2>¿Cómo funciona?</h2>
-
-    <div class="pasos">
-
-        <div class="paso">
-            <h3>Recicla</h3>
-            <p>Deposita tus residuos en los contenedores inteligentes.</p>
-        </div>
-
-        <div class="paso">
-            <h3>Gana Ecopuntos</h3>
-            <p>Cada reciclaje se convierte en puntos dentro de la app.</p>
-        </div>
-
-        <div class="paso">
-            <h3>Canjea recompensas</h3>
-            <p>Usa tus Ecopuntos en tiendas y negocios locales.</p>
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-<section id="ecopuntos" class="ecopuntos">
-
-    <h2>Gana Ecopuntos</h2>
-
-    <p>
-        Cada acción cuenta. Cuanto más reciclas, más Ecopuntos acumulas
-        para obtener descuentos y recompensas.
-    </p>
-
-    <div class="recompensas">
-
-        <div class="recompensa">
-            <h3>Cafeterías</h3>
-            <p>Café gratis o descuentos.</p>
-        </div>
-
-        <div class="recompensa">
-            <h3>Restaurantes</h3>
-            <p>Ofertas especiales pagando con Ecopuntos.</p>
-        </div>
-
-        <div class="recompensa">
-            <h3>Tiendas</h3>
-            <p>Descuentos en comercios de tu ciudad.</p>
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-<section id="negocios" class="negocios">
-
-    <h2>Apoyamos el comercio local</h2>
-
-    <p>
-        Recyclo conecta a los ciudadanos con los comercios de su ciudad,
-        creando una economía más sostenible y responsable.
-    </p>
-
-</section>
-
-
-
-
-<section id="contacto" class="contacto">
-
-    <h2>Contacto</h2>
-
-    <form>
-
-        <input type="text" placeholder="Nombre" required>
-
-        <input type="email" placeholder="Correo electrónico" required>
-
-        <textarea placeholder="Tu mensaje"></textarea>
-
-        <button type="submit">
-            Enviar mensaje
-        </button>
-
-    </form>
-
-</section>
-
-
-
-
-<footer>
-
-    <p>
-        © 2026 Recyclo | Proyecto educativo DAM | Daniel, Jhonatan y Álvaro
-    </p>
-
-</footer>
+    <header class="navigation">
+        <nav>
+            <a href="index.html" class="logo">RECYCLO</a>
+            <ul class="nav-links">
+                <li><a href="/pages/ciclo-vida.html" class="active">Ciclo de vida</a></li>
+                <li><a href="/pages/economia-circular.html">Economía Circular</a></li>
+                <li><a href="/pages/sostenibilidad.html">Sostenibilidad</a></li>
+                <li><a href="/pages/mapa.html">Mapa</a></li>
+                <li><a href="/pages/equipo.html">Equipo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <h1>Convierte reciclar en recompensas</h1>
+                <p>
+                    Con Recyclo cada vez que reciclas ganas Ecopuntos que puedes
+                    gastar en comercios locales. Ayuda al planeta y a tu ciudad.
+                </p>
+                <button class="btn-principal">Empieza a reciclar</button>
+            </div>
+
+            <div class="hero-img">
+                <img src="/resource/hero.png" alt="Ilustración reciclaje">
+            </div>
+        </section>
+
+        <section id="como-funciona" class="como-funciona">
+            <h2>¿Cómo funciona?</h2>
+            <div class="pasos">
+                <div class="paso">
+                    <h3>Recicla</h3>
+                    <p>Deposita tus residuos en los contenedores inteligentes.</p>
+                </div>
+                <div class="paso">
+                    <h3>Gana Ecopuntos</h3>
+                    <p>Cada reciclaje se convierte en puntos dentro de la app.</p>
+                </div>
+                <div class="paso">
+                    <h3>Canjea recompensas</h3>
+                    <p>Usa tus Ecopuntos en tiendas y negocios locales.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ecopuntos" class="ecopuntos">
+            <h2>Gana Ecopuntos</h2>
+            <p>
+                Cada acción cuenta. Cuanto más reciclas, más Ecopuntos acumulas
+                para obtener descuentos y recompensas.
+            </p>
+            <div class="recompensas">
+                <div class="recompensa">
+                    <h3>Cafeterías</h3>
+                    <p>Café gratis o descuentos.</p>
+                </div>
+                <div class="recompensa">
+                    <h3>Restaurantes</h3>
+                    <p>Ofertas especiales pagando con Ecopuntos.</p>
+                </div>
+                <div class="recompensa">
+                    <h3>Tiendas</h3>
+                    <p>Descuentos en comercios de tu ciudad.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="negocios" class="negocios">
+            <h2>Apoyamos el comercio local</h2>
+            <p>
+                Recyclo conecta a los ciudadanos con los comercios de su ciudad,
+                creando una economía más sostenible y responsable.
+            </p>
+        </section>
+
+
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="Tu mensaje"></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p>© 2026 Recyclo | Proyecto educativo DAM | Daniel, Jhonatan y Álvaro</p>
+    </footer>
 
 </body>
+
 </html>

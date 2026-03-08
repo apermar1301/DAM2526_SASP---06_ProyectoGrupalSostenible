@@ -4,162 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciclo de vida</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <script src="/js/main.js"></script>
+    <title>Ciclo de vida | Recyclo</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
 </head>
+
 <body>
-    <h1>Ciclo de vida</h1>
-    <nav class="menu">
-        <li><a href="#introduccion">Introduccion</a></li>
-        <li><a href="#diseño">Diseño</a></li>
-        <li><a href="#desarrollo">Fabricación</a></li>
-        <li><a href="#uso">Uso</a></li>
-        <li><a href="#mantenimiento">Mantenimiento</a></li>
-        <li><a href="#findeVida">Fin de vida</a></li>
-        <li><a href="#conclusion">Conclusión</a></li>
-    </nav>
 
-    <h2 id="introduccion">Introducción</h2>
-    <p>
-        El análisis del ciclo de vida permite evaluar el impacto ambiental del sistema EcoPuntos desde su creación hasta su retirada. Este enfoque ayuda a identificar mejoras sostenibles en cada fase del proceso.
-    </p>
+    <header class="navigation">
+        <nav>
+            <a href="../index.html" class="logo">RECYCLO</a>
+            <ul class="nav-links">
+                <li><a href="/pages/producto.html">Producto</a></li>
+                <li><a href="/pages/ciclo-vida.html" class="active">Ciclo de vida</a></li>
+                <li><a href="/pages/economia-circular.html">Economía Circular</a></li>
+                <li><a href="/pages/sostenibilidad.html">Sostenibilidad</a></li>
+                <li><a href="/pages/mapa.html">Mapa</a></li>
+                <li><a href="/pages/equipo.html">Equipo</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="diagrama-ciclo">
 
-        <h2>Diagrama del Ciclo de Vida</h2>
+    <main>
+        <section id="hero">
+            <h1>Introducción al ciclo de vida</h1>
+            <p>
+                El análisis del ciclo de vida permite evaluar el impacto ambiental del sistema EcoPuntos desde su
+                creación hasta su retirada. Este enfoque ayuda a identificar mejoras sostenibles en cada fase del
+                proceso.
+            </p>
+        </section>
 
-        <div class="linea-del-tiempo">
-
-            <div class="fase" data-info="Planificación del contenedor con materiales reciclables y diseño modular.">
-                <span>1</span>
-                <p>Diseño</p>
+        <section class="diagrama-ciclo">
+            <h2>Diagrama del Ciclo de Vida</h2>
+            <div class="linea-del-tiempo">
+                <div class="fase" data-info="Planificación del contenedor con materiales reciclables y diseño modular.">
+                    <span>1</span>
+                    <p>Diseño</p>
+                </div>
+                <div class="fase" data-info="Fabricación de los contenedores y desarrollo de la plataforma digital.">
+                    <span>2</span>
+                    <p>Desarrollo</p>
+                </div>
+                <div class="fase" data-info="Los ciudadanos reciclan y reciben EcoPuntos.">
+                    <span>3</span>
+                    <p>Uso</p>
+                </div>
+                <div class="fase" data-info="Limpieza, reparación y actualización del sistema.">
+                    <span>4</span>
+                    <p>Mantenimiento</p>
+                </div>
+                <div class="fase" data-info="Desmontaje y reciclaje de componentes al finalizar su vida útil.">
+                    <span>5</span>
+                    <p>Fin de vida</p>
+                </div>
             </div>
+            <div id="popup" class="popup"></div>
+        </section>
 
-            <div class="fase" data-info="Fabricación de los contenedores y desarrollo de la plataforma digital.">
-                <span>2</span>
-                <p>Desarrollo</p>
-            </div>
+        <section id="diseño">
+            <h2>Diseño</h2>
+            <p>En la fase de diseño se planifica cómo será el sistema EcoPuntos tanto a nivel físico como digital.</p>
+            <p>Se prioriza un diseño modular, materiales sostenibles y tecnología de bajo consumo.</p>
+        </section>
 
-            <div class="fase" data-info="Los ciudadanos reciclan y reciben EcoPuntos.">
-                <span>3</span>
-                <p>Uso</p>
-            </div>
+        <section id="desarrollo">
+            <h2>Fabricación</h2>
+            <p>Se fabrican los contenedores y se desarrolla la plataforma digital.</p>
+        </section>
 
-            <div class="fase" data-info="Limpieza, reparación y actualización del sistema.">
-                <span>4</span>
-                <p>Mantenimiento</p>
-            </div>
+        <section id="uso">
+            <h2>Uso</h2>
+            <p>Los ciudadanos depositan residuos y reciben EcoPuntos. Beneficio positivo directo.</p>
+        </section>
 
-            <div class="fase" data-info="Desmontaje y reciclaje de componentes al finalizar su vida útil.">
-                <span>5</span>
-                <p>Fin de vida</p>
-            </div>
+        <section id="mantenimiento">
+            <h2>Mantenimiento</h2>
+            <p>Limpieza, reparación de sensores y actualización de software.</p>
+        </section>
 
-        </div>
+        <section id="findeVida">
+            <h2>Fin de vida</h2>
+            <p>Desmontaje y reciclaje de componentes, reutilización de piezas electrónicas.</p>
+        </section>
 
-        <div id="popup" class="popup"></div>
+        <section id="conclusion">
+            <h2>Conclusión</h2>
+            <p>El sistema EcoPuntos aplica principios de ecodiseño y economía circular.</p>
+        </section>
+    </main>
 
-    </section>
-
-    <section id="diseño">
-        <h2>Diseño</h2>
-        <p>
-            En la fase de diseño se planifica cómo será el sistema EcoPuntos tanto a nivel físico como digital.
-        </p>
-        <p>
-            En primer lugar, se define la estructura de los contenedores inteligentes. Se prioriza un diseño modular, lo que significa que las piezas pueden sustituirse de forma independiente sin necesidad de reemplazar todo el sistema. Esto reduce residuos y alarga la vida útil del producto.
-        </p>
-        <p>
-            También se seleccionan materiales sostenibles, como acero reciclado y plásticos reutilizados, con el objetivo de disminuir el impacto ambiental desde el inicio.
-        </p>
-        <p>
-            A nivel tecnológico, se integran sensores de bajo consumo energético y sistemas de identificación mediante QR o tecnología similar, evitando componentes innecesarios que aumenten el gasto energético.
-        </p>
-        <p>
-            En el diseño digital (la plataforma web), se busca una estructura ligera, optimizada y accesible, reduciendo el consumo de recursos del servidor y del dispositivo del usuario.
-        </p>
-        <p>
-            En esta fase, las decisiones tomadas son clave, ya que un buen diseño permite reducir impactos ambientales en todas las etapas posteriores del ciclo de vida.
-        </p>
-    </section>
-    <section id="desarrollo">
-        <h2>Fabricación</h2>
-        <p>
-          En esta fase se fabrican los contenedores y se desarrolla la aplicación web o sistema digital que gestiona los EcoPuntos.
-        </p>
-        <p>
-            Los principales impactos ambientales aquí son:
-        </p>
-        <ul class="principales-impactos">
-            <li>Consumo energético en la fabricación.</li>
-            <li>Emisiones asociadas al transporte.</li>
-            <li>Uso de recursos tecnológicos.</li>
-        </ul>
-        <p>
-            Para minimizar estos impactos se propone:
-        </p>
-        <ul class="minimizar-impactos">
-            <li>Fabricación local.</li>
-            <li>Uso de energías renovables en la producción.</li>
-            <li>Reducción de embalajes innecesarios.</li>
-        </ul>
-    </section>
-    <section id="uso">
-        <h2>Uso</h2>
-        <p>
-            Es la fase mas larga y la más importante.
-        </p>
-        <p>
-            Durante el uso, los ciudadanos depositan residuos y reciben puntos digitales. Esta etapa genera un impacto positivo directo:
-        </p>
-        <ul>
-            <li>Aumento de la tasa de reciclaje.</li>
-            <li>Reducción de residuos en vertederos.</li>
-            <li>Disminución de emisiones de CO₂.</li>
-            <li>Fomento de hábitos sostenibles.</li>
-        </ul>
-        <p>
-            En esta fase el beneficio ambiental supera claramente el impacto generado en las fases anteriores.
-        </p>
-    </section>
-    <section id="mantenimiento">
-        <h2>Mantenimiento</h2>
-          <p>
-            Incluye todas las acciones necesarias para que el sistema siga funcionando correctamente:
-        </p>
-        <ul>
-            <li>Limpieza periódica.</li>
-            <li>Reparación de sensores.</li>
-            <li>Actualizaciones del software.</li>
-            <li>Revisión de seguridad.</li>
-        </ul>
-        <p>
-            Gracias al diseño modular, muchas piezas pueden repararse en lugar de sustituirse, lo que alarga la vida útil del sistema y reduce residuos electrónicos.
-        </p>
-    </section>
-    <section id="findeVida">
-        <h2>Fin de vida</h2>
-        <p>
-            Cuando los contenedores dejan de funcionar, se procede a:
-        </p>
-        <ul>
-            <li>Desmontaje por componentes.</li>
-            <li>Reciclaje de metales y plásticos.</li>
-            <li>Reutilización de piezas electrónicas.</li>
-        </ul>
-        <p>
-            El objetivo es que el propio sistema no se convierta en un residuo problemático, cerrando el ciclo mediante el reciclaje y la reutilización.
-        </p>
-    </section>
-
-    <h2 id="conclusion">Conclusión</h2>
-    <p>
-        El sistema EcoPuntos aplica principios de ecodiseño y economía circular en todas sus fases. Su mayor impacto positivo se produce durante el uso, donde incentiva el reciclaje y mejora el comportamiento ambiental de la ciudadanía.
-    </p>
-    <p>
-        El análisis del ciclo de vida demuestra que el sistema no solo promueve sostenibilidad, sino que también está diseñado para ser sostenible en sí mismo.
-    </p>
 </body>
+
 </html>

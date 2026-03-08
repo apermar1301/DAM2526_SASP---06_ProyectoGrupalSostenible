@@ -4,38 +4,24 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("JS listo");
 
+    // ACORDEONES ODS
     const toggles = document.querySelectorAll(".ods-toggle");
-
     toggles.forEach(toggle => {
         toggle.addEventListener("click", () => {
             const card = toggle.parentElement;
             const isActive = card.classList.contains("active");
 
-            document.querySelectorAll(".ods-card").forEach(item => {
-                item.classList.remove("active");
-            });
+            document.querySelectorAll(".ods-card").forEach(item => item.classList.remove("active"));
 
-            if (!isActive) {
-                card.classList.add("active");
-            }
+            if (!isActive) card.classList.add("active");
         });
     });
-});
 
-
-
-
-
-
-
-/* DIAGRAMA VISUAL */
-document.addEventListener("DOMContentLoaded", function() {
-
+    // DIAGRAMA CICLO DE VIDA
     const fases = document.querySelectorAll(".fase");
     const popup = document.getElementById("popup");
 
     fases.forEach(fase => {
-
         fase.addEventListener("mousemove", (e) => {
             popup.style.display = "block";
             popup.textContent = fase.dataset.info;
@@ -46,33 +32,21 @@ document.addEventListener("DOMContentLoaded", function() {
         fase.addEventListener("mouseleave", () => {
             popup.style.display = "none";
         });
-
     });
 
-});
-
-
-/* MAPA */
-document.addEventListener("DOMContentLoaded", function () {
-
+    // SIMULADOR MAPA
     let totalPuntos = 0;
-
     const botones = document.querySelectorAll(".btn-reciclar");
     const contador = document.getElementById("contadorPuntos");
     const ranking = document.getElementById("misPuntosRanking");
 
     botones.forEach(boton => {
-
-        boton.addEventListener("click", function () {
-
+        boton.addEventListener("click", () => {
             const puntos = parseInt(boton.dataset.puntos);
             totalPuntos += puntos;
 
-            contador.innerText = totalPuntos + " puntos";
-            ranking.innerText = totalPuntos;
-
+            if (contador) contador.innerText = totalPuntos + " puntos";
+            if (ranking) ranking.innerText = totalPuntos;
         });
-
     });
-
 });
